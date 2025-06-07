@@ -1,10 +1,5 @@
 server:
   port: 0
-spring:
-  datasource:
-    url: ${SPRING_DATASOURCE_URL_M1}
-    username: ${SPRING_DATASOURCE_USERNAME}
-    password: Juanpablo616
 eureka:
   instance:
     preferIpAddress: true

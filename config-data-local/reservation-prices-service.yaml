@@ -4,9 +4,7 @@ server:
 eureka:
   instance:
     prefer-ip-address: true
-    instance-id: ${spring.cloud.client.ip-address}:${spring.application.name}:${random.int}
-    metadata-map:
-      instanceId: ${spring.cloud.client.ip-address}:${spring.application.name}:${random.int}
+    instanceId: ${spring.application.name}:${spring.cloud.client.ip-address}
 
   client:
     fetch-registry: true

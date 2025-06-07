@@ -53,7 +53,7 @@ spring:
             - Path=/tgs/rmkarts/voucher/**
 
         # M6: Rack
-        - id: M6-reservation-service
+        - id: M6-rack-service
           uri: lb://rack-service
           predicates:
             - Path=/tgs/rmkarts/reservation/**

@@ -24,42 +24,42 @@ spring:
 
         # M1: Precios de las reservas
         - id: M1-reservation-prices-service
-          uri: lb://RESERVATION-PRICES-SERVICE
+          uri: lb://reservation-prices-service
           predicates:
             - Path=/tgs/rmkarts/reservationprice/**
 
         # M2: Descuento por tamaño de grupo
         - id: M2-quantity-discount-service
-          uri: lb://QUANTITY-DISCOUNT-SERVICE
+          uri: lb://quantity-discount-service
           predicates:
             - Path=/tgs/rmkarts/quantity/**
 
         # M3: Descuento por cliente frecuente
         - id: M3-frequency-discount-service
-          uri: lb://FREQUENCY-DISCOUNT-SERVICE
+          uri: lb://frequency-discount-service
           predicates:
             - Path=/tgs/rmkarts/freq/**
 
         # M4: Tarifa de días especiales
         - id: M4-speial-day-service
-          uri: lb://SPECIAL-DAY-SERVICE
+          uri: lb://special-day-service
           predicates:
             - Path=/tgs/rmkarts/specialday/**
 
         # M5: Creación de vouchers
         - id: M5-voucher-service 
-          uri: lb://VOUCHER-SERVICE
+          uri: lb://voucher-service
           predicates:
             - Path=/tgs/rmkarts/voucher/**
 
         # M6: Rack
         - id: M6-reservation-service
-          uri: lb://RACK-SERVICE
+          uri: lb://rack-service
           predicates:
             - Path=/tgs/rmkarts/rack/**
 
         # M7: Resportes de Ingresos
         - id: M7-analytics-service
-          uri: lb://ANALYTICS-SERVICE
+          uri: lb://analytics-service
           predicates:
             - Path=/tgs/rmkarts/analytics/**

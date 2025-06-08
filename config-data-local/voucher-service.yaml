@@ -5,6 +5,20 @@ spring:
     url: jdbc:mysql://localhost:3306/voucher
     username: root
     password: Juanpablo616
+    mail:
+      host: smtp.mailtrap.io
+      port: 587
+      username: juanpyloyola@gmail.com
+      password: offl eyrz tzzv bslc 
+      properties:
+        mail:
+          smtp:
+            auth: true
+            starttls:
+              enable: true
+            ssl:
+              enable: false
+          from:
   jpa:
     hibernate:
       ddl-auto: update

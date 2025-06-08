@@ -56,7 +56,7 @@ spring:
         - id: M6-rack-service
           uri: lb://rack-service
           predicates:
-            - Path=/tgs/rmkarts/reservation/**
+            - Path=/tgs/rmkarts/rack/**
 
         # M7: Resportes de Ingresos
         - id: M7-analytics-service

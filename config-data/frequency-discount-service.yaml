@@ -3,8 +3,8 @@ server:
 spring:
   datasource:
     url: ${SPRING_DATASOURCE_URL_FREQUENCY}
-    username: ${SPRING_DATASOURCE_USERNAME}
-    password: ${SPRING_DATASURCE_PASSWORD}
+    username: root
+    password: ${MYSQL_PASSWORD}
   jpa:
     hibernate:
       ddl-auto: update

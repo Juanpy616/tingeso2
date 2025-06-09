@@ -2,9 +2,9 @@ server:
   port: 0
 spring:
   datasource:
-    url: ${SPRING_DATASOURCE_URL_M1}
+    url: ${SPRING_DATASOURCE_URL_RACK}
     username: ${SPRING_DATASOURCE_USERNAME}
-    password: Juanpablo616
+    password: ${SPRING_DATASURCE_PASSWORD}
 eureka:
   instance:
     preferIpAddress: true

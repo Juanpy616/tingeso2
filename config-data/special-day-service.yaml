@@ -11,4 +11,4 @@ spring:
     fetch-registry: true
     register-with-eureka: true
     service-url:
-      defaultZone: http://discovery-server:8761/eureka/
+      defaultZone: ${EUREKA_SERVER_URL}

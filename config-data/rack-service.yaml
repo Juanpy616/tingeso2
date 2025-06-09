@@ -3,8 +3,8 @@ server:
 spring:
   datasource:
     url: ${SPRING_DATASOURCE_URL_RACK}
-    username: ${SPRING_DATASOURCE_USERNAME}
-    password: ${SPRING_DATASURCE_PASSWORD}
+    username: root
+    password: ${MYSQL_PASSWORD}
 eureka:
   instance:
     preferIpAddress: true
@@ -12,4 +12,4 @@ eureka:
     fetch-registry: true
     register-with-eureka: true
     service-url:
-      defaultZone: http://discovery-server:8761/eureka/
+      defaultZone: ${EUREKA_SERVER_URL}

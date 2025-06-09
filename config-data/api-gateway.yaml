@@ -41,7 +41,7 @@ spring:
             - Path=/tgs/rmkarts/freq/**
 
         # M4: Tarifa de días especiales
-        - id: M4-speial-day-service
+        - id: M4-special-day-service
           uri: lb://special-day-service
           predicates:
             - Path=/tgs/rmkarts/specialday/**

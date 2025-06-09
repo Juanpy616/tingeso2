@@ -5,6 +5,7 @@ spring:
     url: ${SPRING_DATASOURCE_URL_SPECIALDAY}
     username: root
     password: ${MYSQL_PASSWORD}
+eureka:
   instance:
     preferIpAddress: true
   client:

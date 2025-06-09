@@ -17,7 +17,6 @@ spring:
         jdbc_time_zone: UTC
         default_schema: voucher
 eureka:
-eureka:
   instance:
     preferIpAddress: true
   client:

@@ -3,8 +3,8 @@ server:
 spring:
   datasource:
     url: ${SPRING_DATASOURCE_URL_SPECIALDAY}
-    username: ${SPRING_DATASOURCE_USERNAME}
-    password: ${SPRING_DATASURCE_PASSWORD}
+    username: ${MYSQL_USER}
+    password: ${MYSQL_PASSWORD}
   instance:
     preferIpAddress: true
   client:
